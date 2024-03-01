@@ -33,6 +33,9 @@ public class Post {
     @Column(name="create_time")
     private Date createTime;
 
+    @Column(name="read_time")
+    private Short readTime;
+
     @ManyToMany(fetch = FetchType.EAGER,
     cascade = CascadeType.ALL)
     @JoinTable(name = "post_keyword", joinColumns = @JoinColumn(name = "post_id"),
