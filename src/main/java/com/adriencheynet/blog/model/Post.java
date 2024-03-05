@@ -36,6 +36,9 @@ public class Post {
     @Column(name="read_time")
     private Short readTime;
 
+    @Column(name="cover_image_path")
+    private String coverImagePath;
+
     @ManyToMany(fetch = FetchType.EAGER,
     cascade = CascadeType.ALL)
     @JoinTable(name = "post_keyword", joinColumns = @JoinColumn(name = "post_id"),
