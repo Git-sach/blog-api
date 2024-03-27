@@ -30,14 +30,17 @@ public class Post {
     
     private String content;
 
+    private String resum;
+    
     @Column(name="create_time")
     private Date createTime;
 
     @Column(name="read_time")
     private Short readTime;
 
-    @Column(name="cover_image_path")
-    private String coverImagePath;
+    @Column(name="cover_image_name")
+    private String coverImageName;
+
 
     @ManyToMany(fetch = FetchType.EAGER,
     cascade = CascadeType.ALL)
