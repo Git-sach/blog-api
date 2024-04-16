@@ -25,4 +25,8 @@ public class PostService {
         Iterable<Post> posts = postRepository.findAll();
         return posts;
     }
+
+    public Post savePost(Post post) {
+        return postRepository.save(post);
+    }
 }

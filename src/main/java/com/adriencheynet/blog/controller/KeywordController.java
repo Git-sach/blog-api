@@ -13,7 +13,7 @@ public class KeywordController {
     @Autowired
     private KeywordService keywordService;
 
-    @GetMapping("/keywords")
+    @GetMapping("public/keywords")
     public Iterable<Keyword> getKeywords() {
         return keywordService.getKeywords();
     }
